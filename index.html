@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Daraz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown me-2">
+                        <select class="form-select" name="brand" id='brand' aria-label="Default select example" onchange="filterShoes(event)">
+                            <option selected value="">Brand</option>
+                            <option value="Nike">Nike</option>
+                            <option value="Adidas">Adidas</option>
+                            <option value="New Balance">New Balance</option>
+                            <option value="Vans">Vans</option>
+                        </select>
+                    </li>
+
+                    <li class="nav-item dropdown me-2">
+                        <select class="form-select" aria-label="Default select example" name="color" id='color' onchange="filterShoes(event)">
+                            <option selected value="">Color</option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </li>
+
+                    <li class="nav-item dropdown me-2">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Size</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </li>
+
+                    <li class="nav-item dropdown me-2">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Price</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row" id="show-rows"></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./index.js"></script>
+</html>
